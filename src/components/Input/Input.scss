@@ -1,0 +1,62 @@
+.input-div {
+    margin-top: 2rem;
+    @media (max-width: 500px) {
+        width: 100%;
+        padding: 0 0.3rem;
+    }
+
+    form {
+
+        input {
+            display: block;
+            margin: auto;
+            width: 25rem;
+            height: 2.5rem;
+            border: 1px solid #7e7c7c;
+            border-radius: 0.5rem;
+            padding: 0.2rem 1rem;
+            outline: none;
+
+            @media (max-width: 500px) {
+                width: 100%;
+                height: 2.5rem;
+            }
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            width: 15rem;
+            height: 2.2rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            outline: none;
+            background-color: #89ad89;
+            transition: all ease-in 0.5s;
+
+            &:hover {
+                background-color: #54be54;
+            }
+
+            &:disabled {
+                background-color: #dfbcbc;
+
+                &:hover {
+                    cursor: not-allowed;
+                }
+            }
+
+            @media (max-width: 600px) {
+                width: 70%;
+            }
+        }
+
+        .solution, .tip {
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+}
